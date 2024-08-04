@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quarto</title>
+    <link rel = "stylesheet" href="quarto.css">
+    <link rel = "stylesheet" href="pieces.css">
+    <link rel = "stylesheet" href="buttons.css">
+    <link rel = "stylesheet" href="board.css">
+</head>
+<body>
+    <div id="start" class="text">Quarto!</div>
+    <button id="play" class="button" onclick="play_f()">play</button>
+    <button id="setting" class="button" onclick="setting_f()">setting</button>
+    <div>
+        <button id="theme" class="button" onclick="theme_f()">theme</button>
+        <div id="themeselect" style="display: none;">
+            <select id="select" class="button">
+                <option>classic</option>
+                <option>blue & red</option>
+            </select>
+            <!-- <button class="button submit" onclick="submit1()">submit</button> -->
+        </div>
+    </div>
+    <div id="player1" class="text" style="display: none;"> player 1 : 
+        <textarea id="first" class="entr"  placeholder="enter your name"></textarea>
+        <button class="button submit" onclick="submit1()">submit</button>
+    </div>
+    <div id="player2" class="text" style="display: none;"> player 2 : 
+        <textarea id="second" class="entr"  placeholder="enter your name"></textarea>
+        <button class="button submit" onclick="submit2()">submit</button>
+    </div>
+    <div id="player1_p"></div>
+    <div id="player1_p2"></div>
+    <div id="player2_p"></div>
+    <div id="player2_p2"></div>
+    <div id="gameover" class="text" style="display: none;">Game Over !
+        <div id="whowin"></div>
+    </div>
+
+    <div id="choose1"></div>
+    <div id="choose2"></div>
+    <div id="board" style="display:none ;">
+        <div id="back"></div>
+        <div id="places">
+            <div id="radif1" >
+                <div class="place" id="p1"></div>
+                <div class="place" id="p2"></div>
+                <div class="place" id="p3"></div>
+                <div class="place" id="p4"></div>
+            </div>
+            <div id="radif2" >
+                <div class="place" id="p5"></div>
+                <div class="place" id="p6"></div>
+                <div class="place" id="p7"></div>
+                <div class="place" id="p8"></div>
+            </div>
+            <div id="radif3" >
+                <div class="place" id="p9"></div>
+                <div class="place" id="p10"></div>
+                <div class="place" id="p11"></div>
+                <div class="place" id="p12"></div>
+            </div>
+            <div id="radif4" >
+                <div class="place" id="p13"></div>
+                <div class="place" id="p14"></div>
+                <div class="place" id="p15"></div>
+                <div class="place" id="p16"></div>
+            </div>
+        </div>
+    </div>
+    <div id="pieces">
+        <div id="left1" >
+            <div class="piece lite circle big full"></div>
+            <div class="piece lite circle big half"></div>
+            <div class="piece lite circle small full"></div>
+            <div class="piece lite circle small half"></div>
+        </div>
+        <div id="left2" >
+            <div class="piece lite square big full"></div>
+            <div class="piece lite square big half"></div>
+            <div class="piece lite square small full"></div>
+            <div class="piece lite square small half"></div>
+        </div>
+        <div id="right1" >
+            <div class="piece dark circle big full"></div>
+            <div class="piece dark circle big half"></div>
+            <div class="piece dark circle small full"></div>
+            <div class="piece dark circle small half"></div>
+        </div>
+        <div id="right2">
+            <div class="piece dark square big full"></div>
+            <div class="piece dark square big half"></div>
+            <div class="piece dark square small full"></div>
+            <div class="piece dark square small half"></div>
+        </div>
+    </div>
+    <div id="hidden"></div>
+    <script src="./quarto.js"></script>
+    <script src="./playing.js"></script>
+    <script src="./finish.js"></script>
+</body>
+</html>

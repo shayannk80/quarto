@@ -1,0 +1,39 @@
+#pieces{
+     display: none;
+}
+.piece{
+    display: inline-block;
+}
+.big{
+    width: 65px;
+    height: 65px;
+}
+.small{
+    width: 40px;
+    height: 40px;
+}
+.lite{
+    background-color: chocolate;
+}
+.dark{
+    background-color: rgb(116, 59, 18)
+}
+.half{
+    opacity: 0.7;
+}
+.circle{
+    border-radius: 50%;
+}
+#left1{
+    position: absolute; top: 400px; left: 30px;
+}
+#left2{
+    position: absolute; top: 500px; left: 30px;
+}
+#right1{
+    position: absolute; top: 400px; left: 1100px;
+}
+#right2{
+    position: absolute; top: 500px; left: 1100px;
+}
+

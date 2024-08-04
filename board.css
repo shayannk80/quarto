@@ -1,0 +1,79 @@
+.place{
+    display: none;
+    width: 90px;
+    height: 90px;
+    background: rgb(255, 244, 239);
+    border-radius: 50%;
+
+}
+#board{
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    background: rgb(43, 27, 20);
+    position: absolute; top: 80px; left: 420px; 
+}
+#p1{
+    position: absolute; left: 64px; top: 64px; 
+    display: flex;
+}
+#p2{
+    position: absolute; left: 160px; top: 65px; 
+    display: flex;
+}
+#p3{
+    position: absolute; left: 255px; top: 65px; 
+    display: flex;
+}
+#p4{
+    position: absolute; left: 350px; top: 65px; 
+    display: flex;
+}
+#p5{
+    position: absolute; left: 65px; top: 160px; 
+    display: flex;
+}
+#p6{
+    position: absolute; left: 160px; top: 160px; 
+    display: flex;
+}
+#p7{
+    position: absolute; left: 255px; top: 160px; 
+    display: flex;
+}
+#p8{
+    position: absolute; left: 350px; top: 160px; 
+    display: flex;
+}
+#p9{
+    position: absolute; left: 65px; top: 255px; 
+    display: flex;
+}
+#p10{
+    position: absolute; left: 160px; top: 255px; 
+    display: flex;
+}
+#p11{
+    position: absolute; left: 255px; top: 255px; 
+    display: flex;
+}
+#p12{
+    position: absolute; left: 350px; top: 255px; 
+    display: flex;
+}
+#p13{
+    position: absolute; left: 65px; top: 350px; 
+    display: flex;
+}
+#p14{
+    position: absolute; left: 160px; top: 350px; 
+    display: flex;
+}
+#p15{
+    position: absolute; left: 255px; top: 350px; 
+    display: flex;
+}
+#p16{
+    position: absolute; left: 348px; top: 348px; 
+    display: flex;
+}
